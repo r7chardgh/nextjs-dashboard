@@ -34,7 +34,9 @@ export async function createInvoice(prevState: State, formData: FormData) {
     amount: formData.get('amount'),
     status: formData.get('status'),
   });
-
+  
+  
+  
   //check if the returned data from safeParse is succeed or not
   if (!validatedFields.success) {
     //not succeed
